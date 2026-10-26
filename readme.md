@@ -15,6 +15,7 @@ SCG, BCG signal in last 10s -> a pair of SBP（收缩压） and DBP（舒张压�
 ![model-structure](./assets/nibpm-model-structure.png)
 
 | 部分       | 起始设计                         |
+|:-----------|:---------------------------------|
 | 每路编码器 | 三层 Conv1D，通道数 16 → 32 → 64 |
 | 特征压缩   | 池化后，每路得到 512 维特征      |
 | 两路融合   | 拼接成 1024 维                   |
